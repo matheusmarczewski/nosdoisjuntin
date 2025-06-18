@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Entre Eu & Você 💖 - Jogo Completo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff5f8;
+            margin: 20px;
+            color: #333;
+        }
+        h1, h2 {
+            color: #e91e63;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        button {
+            background-color: #e91e63;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 10px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #d81b60;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+    <script>
+        function toggleSection(id) {
+            var section = document.getElementById(id);
+            if (section.classList.contains('hidden')) {
+                section.classList.remove('hidden');
+            } else {
+                section.classList.add('hidden');
+            }
+        }
+    </script>
+</head>
+<body>
+
+<h1>Entre Eu & Você 💖 - Jogo Completo</h1>
+<p>Bem-vindos ao nosso jogo de casal! Aqui tem todos os modos, desafios e perguntas. Se divirtam e se conectem ❤️</p>
+
+<div class="section">
+    <button onclick="toggleSection('parte1')">Mostrar / Ocultar Parte 1</button>
+    <div id="parte1" class="hidden">
+        <h2>Parte 1 - Modo Leve e Profundo</h2><p>Conteúdo da Parte 1...</p>
+    </div>
+</div>
+
+<div class="section">
+    <button onclick="toggleSection('parte2')">Mostrar / Ocultar Parte 2</button>
+    <div id="parte2" class="hidden">
+        <h2>Parte 2 - Desejos Físicos, Resolvendo Conflitos e mais</h2><p>Conteúdo da Parte 2...</p>
+    </div>
+</div>
+
+</body>
+</html>
